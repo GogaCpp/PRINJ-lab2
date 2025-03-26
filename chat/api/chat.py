@@ -1,10 +1,10 @@
 import uuid
 from fastapi import APIRouter, Depends, status
 
-from chat.services.chat import ChatService
-from chat.schemas.chat import BaseChat, BaseChatList, ChatCreatePayload
-from chat.config import oauth2_scheme
-from chat.services.jwt import decode_token
+from ..services.chat import ChatService
+from ..schemas.chat import BaseChat, BaseChatList, ChatCreatePayload
+from ..config import oauth2_scheme
+from ..services.jwt import decode_token
 
 router = APIRouter(prefix="/chat")
 

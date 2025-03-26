@@ -1,7 +1,7 @@
 import uuid
 from fastapi import HTTPException, status
 
-from user.schemas.user import UserCreatePayload, UserUpdatePayload
+from ..schemas.user import UserCreatePayload, UserUpdatePayload
 
 user_list = [
     {

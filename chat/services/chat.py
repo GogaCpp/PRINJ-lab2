@@ -1,7 +1,7 @@
 import uuid
 from fastapi import HTTPException, status
 
-from chat.schemas.chat import ChatCreatePayload
+from ..schemas.chat import ChatCreatePayload
 
 chat_list = [
     {

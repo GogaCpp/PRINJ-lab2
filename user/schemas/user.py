@@ -35,4 +35,4 @@ class BaseUser(BaseModel):
 class BaseUserList(BaseModel):
     model_config = ConfigDict(from_attributes=True, strict=True)
 
-    user_list: list[BaseUser | None]
+    user_list: list[BaseUser]

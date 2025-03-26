@@ -1,9 +1,9 @@
 import uuid
 from fastapi import APIRouter, Depends, status
 
-from user.services.user import UserService
-from user.schemas.user import BaseUser, BaseUserList, UserCreatePayload, UserUpdatePayload
-from user.config import oauth2_scheme
+from ..services.user import UserService
+from ..schemas.user import BaseUser, BaseUserList, UserCreatePayload, UserUpdatePayload
+from ..config import oauth2_scheme
 
 router = APIRouter(prefix="/user")
 

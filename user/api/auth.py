@@ -3,8 +3,8 @@ from fastapi.security import OAuth2PasswordRequestForm
 
 from datetime import timedelta
 
-from user.services.jwt import create_access_token
-from user.services.user import UserService
+from ..services.jwt import create_access_token
+from ..services.user import UserService
 
 router = APIRouter(prefix="/auth", tags=["auth"])
 

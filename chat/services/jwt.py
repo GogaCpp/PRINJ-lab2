@@ -1,5 +1,5 @@
 from jose import JWTError, jwt
-from user.config import settings
+from ..config import settings
 
 
 async def decode_token(token: str):

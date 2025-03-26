@@ -26,4 +26,4 @@ class BaseChat(BaseModel):
 class BaseChatList(BaseModel):
     model_config = ConfigDict(from_attributes=True, strict=True)
 
-    chat_list: list[BaseChat | None]
+    chat_list: list[BaseChat]
