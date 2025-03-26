@@ -6,8 +6,8 @@ from ..schemas.user import UserCreatePayload, UserUpdatePayload
 user_list = [
     {
         "id": uuid.uuid1(),
-        "name": "root",
-        "password": "root",
+        "name": "admin",
+        "password": "secret",
         "user_type_id": 3
     }
 ]
