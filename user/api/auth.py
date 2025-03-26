@@ -25,6 +25,7 @@ async def login(
         data={
             "sub": str(user["id"]),
         },
-        expires_delta=timedelta(minutes=480)
+        expires_delta=timedelta(minutes=480),
+        user_id=user["id"]
     )
     return {"access_token": access_token, "token_type": "bearer"}

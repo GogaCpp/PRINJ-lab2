@@ -21,7 +21,6 @@ class UserService():
         for user in user_list:
             if user["id"] == id:
                 return user
-            print(user)
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND)
 
     async def get_user_list(self):
