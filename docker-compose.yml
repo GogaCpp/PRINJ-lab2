@@ -1,0 +1,15 @@
+
+services:
+  chat-service:
+    build:
+      context: .
+      dockerfile: chat/Dockerfile
+    ports:
+      - "8001:8001"
+
+  user-service:
+    build:
+      context: .
+      dockerfile: user/Dockerfile
+    ports:
+      - "8002:8002"
