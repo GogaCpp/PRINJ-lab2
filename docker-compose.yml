@@ -1,15 +1,25 @@
 
 services:
   chat-service:
+    container_name: chat-service
     build:
       context: .
       dockerfile: chat/Dockerfile
     ports:
-      - "8001:8001"
+      - "8002:8000"
+    networks:
+      - mynet
 
   user-service:
+    container_name: user-service
     build:
       context: .
       dockerfile: user/Dockerfile
     ports:
-      - "8002:8002"
+      - "8001:8000"
+    networks:
+      - mynet
+
+networks:
+  mynet:
+    driver: bridge
